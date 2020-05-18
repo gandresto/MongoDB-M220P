@@ -312,11 +312,8 @@ def get_movie(id):
 
         return None
 
-    except Exception as e:
-        return {}
-    
-    # except InvalidId as e:
-    #     return None
+    except InvalidId as e:
+        return None
 
 
 def get_all_genres():
